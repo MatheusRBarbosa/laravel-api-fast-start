@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\BaseController;
 use App\Http\Requests\Auth\LoginRequest;
 use Illuminate\Support\Facades\Auth;
 use Tymon\JWTAuth\Exceptions\JWTException;
@@ -12,7 +12,7 @@ use JWTAuth;
  * @group Auth
  */
 
-class LoginController extends Controller
+class LoginController extends BaseController
 {
 
     /**

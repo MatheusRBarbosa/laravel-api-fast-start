@@ -5,7 +5,7 @@ namespace App\Services;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
-class AuthService
+class AuthService extends BaseService
 {
     protected $user;
 
