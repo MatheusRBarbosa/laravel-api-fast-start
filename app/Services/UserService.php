@@ -12,10 +12,12 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 class UserService extends BaseService
 {
     protected $user;
+    protected $notificationService;
 
-    public function __construct(User $user)
+    public function __construct(User $user, NotificationService $notificationService)
     {
         $this->user = $user;
+        $this->notificationService = $notificationService;
     }
 
     /**
